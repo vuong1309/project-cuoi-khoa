@@ -20,7 +20,7 @@
     <div class="header">
         <div class="container main-menu">
             <div class="row p-2">
-                <div class="col-md-9">
+                <div class="col">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#"><img src="./images/logoEx.svg"
@@ -31,34 +31,41 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <ul class="navbar-nav me-auto mb-3 mb-lg-0">
                                     <li class="nav-item">
                                         <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
                                             href="#">Trang
                                             chủ</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link text-white fs-5 fw-light active"
-                                            aria-current="page" href="#">Đặt
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Đặt
                                             bàn</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link text-white fs-5 fw-light active"
-                                            aria-current="page" href="#">Đặt
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Đặt
                                             hàng</a>
                                     </li>
-                                    <li class="nav-item"> <a class="nav-link text-white fs-5 fw-light active"
-                                            aria-current="page" href="#">Ưu
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Ưu
                                             đãi</a>
                                     </li>
-                                    <li class="nav-item-last"> <a class="nav-link text-white fs-5 fw-light active"
-                                            aria-current="page" href="#">Địa
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white fs-5 fw-light active" aria-current="page"
+                                            href="#">Địa
                                             chỉ</a>
+                                    </li>
+                                    <li class="nav-item-last">
+                                        <a class="btn btn-outline-danger rounded-pill fs-5" href="#loginOTP">Đăng
+                                            nhập <i class="bx bx-user"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <div class="col-md-3">C</div>
             </div>
         </div>
     </div>
@@ -75,15 +82,15 @@
                     <h1 class="pt-3 text-white">PHAN EXPRESS</h1>
                     <h5 class="pt-3 text-white fw-light">Thưởng thức những bữa tiệc tại gia</h5>
                 </div>
-                <div class="col-12 col-md-6 d-flex pb-3">
+                <div class="btn-order col-12 col-md-6 d-flex pb-3">
                     <div>
-                        <button type="button" class="btn btn-danger rounded-pill p-2 mx-3" style="width: 150px;">
+                        <button type="button" class="btn btn-danger rounded-pill fs-5 p-2 mx-3" style="width: 150px;">
                             <a href="#" class="text-decoration-none text-white">Đặt bàn <img
                                     src="./images/restaurant-icon-white.png" class="img-fluid"></a>
                         </button>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-light rounded-pill p-2 mx-2" style="width: 150px;">
+                        <button type="button" class="btn btn-light rounded-pill fs-5 p-2 mx-3" style="width: 150px;">
                             <a href="#" class="text-decoration-none text-danger">Đặt hàng <img
                                     src="./images/ship-icon.svg" class="img-fluid"></a>
                         </button>
@@ -93,17 +100,7 @@
 
                 <!-- carousel -->
                 <div class="col-12">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        </div>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner border border-0 rounded-4">
                             <div class="carousel-item active">
                                 <img src="./images/menu1.jpg" class="d-block w-100" alt="menu1">
@@ -118,12 +115,12 @@
                                 <img src="./images/menu4.jpg" class="d-block w-100" alt="menu4">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -131,6 +128,8 @@
                     </div>
                 </div>
                 <!-- end of carousel -->
+
+
 
             </div>
         </div>
@@ -217,19 +216,17 @@
                                 camping độc đáo, âm nhạc bắt tai, Charger hứa hẹn sẽ mang đến những trải nghiệm ăn chơi
                                 tiệc tùng đỉnh cao có 1-0-2.</p>
                         </div>
-                        <div class="button-trademark">
-                            <div class="container justify-content-center d-flex">
-                                <div>
-                                    <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
-                                        <a href="#" class="text-decoration-none text-danger">Đặt bàn <img
-                                                src="./images/restaurant-icon.png" class="img-fluid"></a>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-light rounded-pill px-2">
-                                        <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
-                                    </button>
-                                </div>
+                        <div class="button-trademark d-flex justify-content-center">
+                            <div>
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
+                                    <a href="#" class="text-decoration-none text-danger">Đặt bàn <img
+                                            src="./images/restaurant-icon.png" class="img-fluid"></a>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
+                                    <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -248,19 +245,17 @@
                                 món từ đồ khai vị, thịt nướng đa dạng, hải sản tươi mới, lẩu chuẩn gu và tráng miệng mát
                                 lạnh đầy "sức hút" cho team ghiền thịt mê sốt.</p>
                         </div>
-                        <div class="button-trademark">
-                            <div class="container justify-content-center d-flex">
-                                <div>
-                                    <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
-                                        <a href="#" class="text-decoration-none text-danger">Đặt bàn <img
-                                                src="./images/restaurant-icon.png" class="img-fluid"></a>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-light rounded-pill px-2">
-                                        <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
-                                    </button>
-                                </div>
+                        <div class="button-trademark d-flex justify-content-center">
+                            <div>
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
+                                    <a href="#" class="text-decoration-none text-danger">Đặt bàn <img
+                                            src="./images/restaurant-icon.png" class="img-fluid"></a>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
+                                    <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -271,7 +266,7 @@
                             <a href="#"><img src="./images/tong.svg"
                                     class="brand-img img-fluid rounded mx-auto d-block"></a>
                         </div>
-                        <div class="text-content-trademark p-2 mb-3">
+                        <div class="text-content-trademark">
                             <p class="text-center text-white p-3">Tòng Livehouse là concept đầu tiên tại Hà Nội đưa dòng
                                 nhạc live acoustic kết hợp với ẩm thực và những sự kiện âm nhạc độc đáo đến những tín đồ
                                 yêu thích tiệc tùng. Menu đa dạng, quy tụ đầy đủ các món ăn ngon từ Á đến Âu chiều lòng
@@ -288,7 +283,7 @@
                                 </button>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-light rounded-pill px-2">
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
                                     <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
                                 </button>
                             </div>
@@ -318,7 +313,7 @@
                                 </button>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-light rounded-pill px-2">
+                                <button type="button" class="btn btn-light rounded-pill px-2 mx-2">
                                     <a href="#" class="text-decoration-none text-danger">Xem thực đơn</a>
                                 </button>
                             </div>

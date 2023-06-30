@@ -150,10 +150,19 @@
         background: url(./images/banner-mb.png);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-color: #dfdfdf;
         width: 100%;
         height: auto;
+    }
+
+    .btn-order {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-order>div {
+        padding: 10px 0px;
     }
 
     .news,
