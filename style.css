@@ -20,7 +20,6 @@
     background-color: var(--body);
 }
 
-
 .header {
     background-color: var(--main-menu);
 }
@@ -36,7 +35,6 @@
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 
 .img-logo {
     width: 80px;
@@ -134,6 +132,42 @@
     padding: 60px 0px 60px 0px;
 }
 
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .nav-link:hover::after {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .nav-item-last {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        border-bottom: 2px solid red;
+    }
+}
 
 @media only screen and (max-width: 767px) {
 
